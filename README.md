@@ -178,17 +178,6 @@ oléagineux), l'estimation est déjà exploitable. Pour distinguer blé tendre
 et blé dur, en revanche, le NDVI seul ne suffit pas : il faudrait d'autres
 bandes spectrales, ou du radar (voir limites).
 
-## Compétences démontrées
-
-| Domaine | Détail |
-|---|---|
-| Télédétection | Sentinel-2 L2A, calcul NDVI, masquage nuages par bande SCL, correction du décalage radiométrique BOA (baseline ESA ≥ 04.00) |
-| Géospatial | API STAC (`pystac-client`, `planetary-computer`), cube de données paresseux (`odc-stac`, `xarray`, `dask`), zonal statistics vectorisées (rasterisation + groupby), CRS unique (Lambert-93) |
-| Données ouvertes | RPG (IGN/ASP), gestion d'un format de livraison réel (GeoPackage, 7z, référentiels de nomenclature), scripting bout en bout sans étape manuelle |
-| Machine learning | RandomForest / HistGradientBoosting, feature engineering simple (série brute + dérivées), gestion des classes déséquilibrées |
-| Rigueur méthodologique | Split spatial par blocs géographiques (pas un split aléatoire), validation croisée GroupKFold, interpolation restreinte à la fenêtre observée pour la courbe de performance, importance par permutation, lecture agronomique des confusions |
-| Data visualisation | Palette catégorielle validée (séparabilité daltonisme), cohérence visuelle inter-figures, cartographie choroplèthe |
-
 ## Limites
 
 - **Une seule zone, un seul millésime.** La généralisation à une autre région
@@ -275,3 +264,8 @@ Pistes non implémentées ici, pour une suite éventuelle :
 - **Test de généralisation** : appliquer le modèle entraîné ici à une autre
   zone ou une autre année, pour mesurer ce qui se dégrade réellement hors du
   cadre d'entraînement.
+
+---
+
+*Implémentation assistée par Claude Code ; méthodologie, cadrage et
+arbitrages : les miens.*
