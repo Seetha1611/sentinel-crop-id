@@ -234,6 +234,10 @@ pipeline complet tourne en moins d'une heure sur un ordinateur portable, une
 fois les données téléchargées. Seed fixée (`RANDOM_SEED = 42`) pour la
 reproductibilité.
 
+Le raisonnement complet (problème → données → signatures → modèle → carte →
+limites) est orchestré dans
+[`notebooks/classification_cultures_sentinel2.ipynb`](notebooks/classification_cultures_sentinel2.ipynb).
+
 ```
 sentinel-crop-id/
 ├── src/
