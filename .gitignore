@@ -1,0 +1,22 @@
+# Données volumineuses reconstruites/téléchargées par les scripts (voir README)
+data/
+
+# Caches Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Sorties générées (régénérées par les scripts, on ne versionne que les visuels finaux choisis)
+outputs/*.nc
+outputs/*.zarr
+
+# OS / éditeurs
+.DS_Store
+*.swp
+
